@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,14 +107,6 @@ const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
 function isDynamicRoute(route) {
   return TEST_ROUTE.test(route);
 }
-
-/***/ }),
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("1TCz");
-
 
 /***/ }),
 
@@ -174,131 +166,6 @@ const requestIdleCallback = typeof self !== 'undefined' && self.requestIdleCallb
 
 var _default = requestIdleCallback;
 exports.default = _default;
-
-/***/ }),
-
-/***/ "1TCz":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// EXTERNAL MODULE: ./styles/globals.css
-var globals = __webpack_require__("zPlV");
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./components/layout/logo.module.css
-var logo_module = __webpack_require__("CJ8n");
-var logo_module_default = /*#__PURE__*/__webpack_require__.n(logo_module);
-
-// CONCATENATED MODULE: ./components/layout/logo.js
-
-
-
-function Logo() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-    className: logo_module_default.a.logo,
-    children: "Max' Next Blog"
-  });
-}
-
-/* harmony default export */ var logo = (Logo);
-// EXTERNAL MODULE: ./components/layout/main-navigation.module.css
-var main_navigation_module = __webpack_require__("dbdp");
-var main_navigation_module_default = /*#__PURE__*/__webpack_require__.n(main_navigation_module);
-
-// CONCATENATED MODULE: ./components/layout/main-navigation.js
-
-
-
-
-
-
-function MainNavigation() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("header", {
-    className: main_navigation_module_default.a.header,
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-      href: "/",
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(logo, {})
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("nav", {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-            href: "/posts",
-            children: "Posts"
-          })
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
-            href: "/contact",
-            children: "Contact"
-          })
-        })]
-      })
-    })]
-  });
-}
-
-/* harmony default export */ var main_navigation = (MainNavigation);
-// CONCATENATED MODULE: ./components/layout/layout.js
-
-
-
-
-
-function Layout(props) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_["Fragment"], {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(main_navigation, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("main", {
-      children: props.children
-    })]
-  });
-}
-
-/* harmony default export */ var layout = (Layout);
-// CONCATENATED MODULE: ./pages/_app.js
-
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-function MyApp({
-  Component,
-  pageProps
-}) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(layout, {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(head_default.a, {
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1"
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Component, _objectSpread({}, pageProps))]
-  });
-}
-
-/* harmony default export */ var _app = __webpack_exports__["default"] = (MyApp);
 
 /***/ }),
 
@@ -450,6 +317,14 @@ function normalizeLocalePath(pathname, locales) {
 
 /***/ }),
 
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("RNiq");
+
+
+/***/ }),
+
 /***/ "6D7l":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -581,13 +456,107 @@ function formatUrl(urlObj) {
 
 /***/ }),
 
-/***/ "CJ8n":
+/***/ "6DrD":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getPostsFiles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getPostData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getAllPosts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getFeaturedPosts; });
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("mw/K");
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("oyvS");
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("uo/4");
+/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_2__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(process.cwd(), 'posts');
+function getPostsFiles() {
+  return fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync(postsDirectory);
+}
+function getPostData(postIdentifier) {
+  const postSlug = postIdentifier.replace(/\.md$/, ''); // removes the file extension
+
+  const filePath = path__WEBPACK_IMPORTED_MODULE_1___default.a.join(postsDirectory, `${postSlug}.md`);
+  const fileContent = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readFileSync(filePath, 'utf-8');
+  const {
+    data,
+    content
+  } = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContent);
+
+  const postData = _objectSpread(_objectSpread({
+    slug: postSlug
+  }, data), {}, {
+    content
+  });
+
+  return postData;
+}
+function getAllPosts() {
+  const postFiles = getPostsFiles();
+  const allPosts = postFiles.map(postFile => {
+    return getPostData(postFile);
+  });
+  const sortedPosts = allPosts.sort((postA, postB) => postA.date > postB.date ? -1 : 1);
+  return sortedPosts;
+}
+function getFeaturedPosts() {
+  const allPosts = getAllPosts();
+  const featuredPosts = allPosts.filter(post => post.isFeatured);
+  return featuredPosts;
+}
+
+/***/ }),
+
+/***/ "7UUK":
 /***/ (function(module, exports) {
 
-// Exports
-module.exports = {
-	"logo": "logo_logo__28eJO"
-};
+module.exports = require("next/dist/next-server/lib/to-base-64.js");
+
+/***/ }),
+
+/***/ "8OQS":
+/***/ (function(module, exports) {
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutPropertiesLoose;
+
+/***/ }),
+
+/***/ "ANQk":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/server/image-config.js");
+
+/***/ }),
+
+/***/ "Aiso":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("dQHF")
 
 
 /***/ }),
@@ -609,6 +578,127 @@ exports.__esModule = true;
 exports.default = resolveRewrites;
 
 function resolveRewrites() {}
+
+/***/ }),
+
+/***/ "Gf/z":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"post": "post-item_post__3XTCn",
+	"image": "post-item_image__1Nx-U",
+	"content": "post-item_content__3VHsU"
+};
+
+
+/***/ }),
+
+/***/ "JHKd":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
+
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__("YFqc");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__("Aiso");
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+
+// EXTERNAL MODULE: ./components/posts/post-item.module.css
+var post_item_module = __webpack_require__("Gf/z");
+var post_item_module_default = /*#__PURE__*/__webpack_require__.n(post_item_module);
+
+// CONCATENATED MODULE: ./components/posts/post-item.js
+
+
+
+
+
+
+function PostItem(props) {
+  const {
+    title,
+    image,
+    excerpt,
+    date,
+    slug
+  } = props.post;
+  const formattedDate = new Date(date).toLocaleDateString('en-US', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+  const imagePath = `/images/posts/${slug}/${image}`;
+  const linkPath = `/posts/${slug}`;
+  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
+    className: post_item_module_default.a.post,
+    children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(link_default.a, {
+      href: linkPath,
+      children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+          className: post_item_module_default.a.image,
+          children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(image_default.a, {
+            src: imagePath,
+            alt: title,
+            width: 300,
+            height: 200,
+            layout: "responsive"
+          })
+        }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+          className: post_item_module_default.a.content,
+          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
+            children: title
+          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("time", {
+            children: formattedDate
+          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+            children: excerpt
+          })]
+        })]
+      })
+    })
+  });
+}
+
+/* harmony default export */ var post_item = (PostItem);
+// EXTERNAL MODULE: ./components/posts/posts-grid.module.css
+var posts_grid_module = __webpack_require__("Mzr7");
+var posts_grid_module_default = /*#__PURE__*/__webpack_require__.n(posts_grid_module);
+
+// CONCATENATED MODULE: ./components/posts/posts-grid.js
+
+
+
+
+function PostsGrid(props) {
+  const {
+    posts
+  } = props;
+  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("ul", {
+    className: posts_grid_module_default.a.grid,
+    children: posts.map(post => /*#__PURE__*/Object(jsx_runtime_["jsx"])(post_item, {
+      post: post
+    }, post.slug))
+  });
+}
+
+/* harmony default export */ var posts_grid = __webpack_exports__["a"] = (PostsGrid);
+
+/***/ }),
+
+/***/ "Mzr7":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"grid": "posts-grid_grid__zccI4"
+};
+
 
 /***/ }),
 
@@ -879,6 +969,124 @@ module.exports = require("next/dist/next-server/lib/router-context.js");
 
 /***/ }),
 
+/***/ "RNiq":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: ./components/posts/posts-grid.js + 1 modules
+var posts_grid = __webpack_require__("JHKd");
+
+// EXTERNAL MODULE: ./components/home-page/featured-posts.module.css
+var featured_posts_module = __webpack_require__("i4SY");
+var featured_posts_module_default = /*#__PURE__*/__webpack_require__.n(featured_posts_module);
+
+// CONCATENATED MODULE: ./components/home-page/featured-posts.js
+
+
+
+
+
+function FeaturedPosts(props) {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("section", {
+    className: featured_posts_module_default.a.latest,
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
+      children: "Featured Posts"
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(posts_grid["a" /* default */], {
+      posts: props.posts
+    })]
+  });
+}
+
+/* harmony default export */ var featured_posts = (FeaturedPosts);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__("Aiso");
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+
+// EXTERNAL MODULE: ./components/home-page/hero.module.css
+var hero_module = __webpack_require__("x+QA");
+var hero_module_default = /*#__PURE__*/__webpack_require__.n(hero_module);
+
+// CONCATENATED MODULE: ./components/home-page/hero.js
+
+
+
+
+
+function Hero() {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("section", {
+    className: hero_module_default.a.hero,
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      className: hero_module_default.a.image,
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(image_default.a, {
+        src: "/images/site/max.png",
+        alt: "An image showing Max",
+        width: 300,
+        height: 300
+      })
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h1", {
+      children: "Hi, I'm Max"
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+      children: "I blog about web development - especially frontend frameworks like Angular or React."
+    })]
+  });
+}
+
+/* harmony default export */ var hero = (Hero);
+// EXTERNAL MODULE: ./lib/posts-util.js
+var posts_util = __webpack_require__("6DrD");
+
+// CONCATENATED MODULE: ./pages/index.js
+
+
+
+
+
+
+
+
+function HomePage(props) {
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_["Fragment"], {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: "Max' Blog"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "description",
+        content: "I post about programming and web development."
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(hero, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(featured_posts, {
+      posts: props.posts
+    })]
+  });
+}
+
+function getStaticProps() {
+  const featuredPosts = Object(posts_util["b" /* getFeaturedPosts */])();
+  return {
+    props: {
+      posts: featuredPosts
+    }
+  };
+}
+/* harmony default export */ var pages = __webpack_exports__["default"] = (HomePage);
+
+/***/ }),
+
 /***/ "TqRt":
 /***/ (function(module, exports) {
 
@@ -896,6 +1104,13 @@ module.exports = _interopRequireDefault;
 /***/ (function(module, exports) {
 
 module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-from-route.js");
+
+/***/ }),
+
+/***/ "UlpK":
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/next-server/lib/head.js");
 
 /***/ }),
 
@@ -1264,6 +1479,398 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "dQHF":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__("TqRt");
+
+exports.__esModule = true;
+exports.default = Image;
+
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__("8OQS"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__("pVnL"));
+
+var _react = _interopRequireDefault(__webpack_require__("cDcd"));
+
+var _head = _interopRequireDefault(__webpack_require__("UlpK"));
+
+var _toBase = __webpack_require__("7UUK");
+
+var _imageConfig = __webpack_require__("ANQk");
+
+var _useIntersection = __webpack_require__("vNVm");
+
+if (true) {
+  ;
+  global.__NEXT_IMAGE_IMPORTED = true;
+}
+
+const VALID_LOADING_VALUES = ['lazy', 'eager', undefined];
+const loaders = new Map([['imgix', imgixLoader], ['cloudinary', cloudinaryLoader], ['akamai', akamaiLoader], ['default', defaultLoader]]);
+const VALID_LAYOUT_VALUES = ['fill', 'fixed', 'intrinsic', 'responsive', undefined];
+const {
+  deviceSizes: configDeviceSizes,
+  imageSizes: configImageSizes,
+  loader: configLoader,
+  path: configPath,
+  domains: configDomains
+} = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default"} || _imageConfig.imageConfigDefault; // sort smallest to largest
+
+const allSizes = [...configDeviceSizes, ...configImageSizes];
+configDeviceSizes.sort((a, b) => a - b);
+allSizes.sort((a, b) => a - b);
+
+function getWidths(width, layout) {
+  if (typeof width !== 'number' || layout === 'fill' || layout === 'responsive') {
+    return {
+      widths: configDeviceSizes,
+      kind: 'w'
+    };
+  }
+
+  const widths = [...new Set( // > This means that most OLED screens that say they are 3x resolution,
+  // > are actually 3x in the green color, but only 1.5x in the red and
+  // > blue colors. Showing a 3x resolution image in the app vs a 2x
+  // > resolution image will be visually the same, though the 3x image
+  // > takes significantly more data. Even true 3x resolution screens are
+  // > wasteful as the human eye cannot see that level of detail without
+  // > something like a magnifying glass.
+  // https://blog.twitter.com/engineering/en_us/topics/infrastructure/2019/capping-image-fidelity-on-ultra-high-resolution-devices.html
+  [width, width * 2
+  /*, width * 3*/
+  ].map(w => allSizes.find(p => p >= w) || allSizes[allSizes.length - 1]))];
+  return {
+    widths,
+    kind: 'x'
+  };
+}
+
+function generateImgAttrs({
+  src,
+  unoptimized,
+  layout,
+  width,
+  quality,
+  sizes,
+  loader
+}) {
+  if (unoptimized) {
+    return {
+      src,
+      srcSet: undefined,
+      sizes: undefined
+    };
+  }
+
+  const {
+    widths,
+    kind
+  } = getWidths(width, layout);
+  const last = widths.length - 1;
+  return {
+    src: loader({
+      src,
+      quality,
+      width: widths[last]
+    }),
+    sizes: !sizes && kind === 'w' ? '100vw' : sizes,
+    srcSet: widths.map((w, i) => `${loader({
+      src,
+      quality,
+      width: w
+    })} ${kind === 'w' ? w : i + 1}${kind}`).join(', ')
+  };
+}
+
+function getInt(x) {
+  if (typeof x === 'number') {
+    return x;
+  }
+
+  if (typeof x === 'string') {
+    return parseInt(x, 10);
+  }
+
+  return undefined;
+}
+
+function defaultImageLoader(loaderProps) {
+  const load = loaders.get(configLoader);
+
+  if (load) {
+    return load((0, _extends2.default)({
+      root: configPath
+    }, loaderProps));
+  }
+
+  throw new Error(`Unknown "loader" found in "next.config.js". Expected: ${_imageConfig.VALID_LOADERS.join(', ')}. Received: ${configLoader}`);
+}
+
+function Image(_ref) {
+  let {
+    src,
+    sizes,
+    unoptimized = false,
+    priority = false,
+    loading,
+    className,
+    quality,
+    width,
+    height,
+    objectFit,
+    objectPosition,
+    loader = defaultImageLoader
+  } = _ref,
+      all = (0, _objectWithoutPropertiesLoose2.default)(_ref, ["src", "sizes", "unoptimized", "priority", "loading", "className", "quality", "width", "height", "objectFit", "objectPosition", "loader"]);
+  let rest = all;
+  let layout = sizes ? 'responsive' : 'intrinsic';
+  let unsized = false;
+
+  if ('unsized' in rest) {
+    unsized = Boolean(rest.unsized); // Remove property so it's not spread into image:
+
+    delete rest['unsized'];
+  } else if ('layout' in rest) {
+    // Override default layout if the user specified one:
+    if (rest.layout) layout = rest.layout; // Remove property so it's not spread into image:
+
+    delete rest['layout'];
+  }
+
+  if (false) {}
+
+  let isLazy = !priority && (loading === 'lazy' || typeof loading === 'undefined');
+
+  if (src && src.startsWith('data:')) {
+    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
+    unoptimized = true;
+    isLazy = false;
+  }
+
+  const [setRef, isIntersected] = (0, _useIntersection.useIntersection)({
+    rootMargin: '200px',
+    disabled: !isLazy
+  });
+  const isVisible = !isLazy || isIntersected;
+  const widthInt = getInt(width);
+  const heightInt = getInt(height);
+  const qualityInt = getInt(quality);
+  let wrapperStyle;
+  let sizerStyle;
+  let sizerSvg;
+  let imgStyle = {
+    visibility: isVisible ? 'inherit' : 'hidden',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    boxSizing: 'border-box',
+    padding: 0,
+    border: 'none',
+    margin: 'auto',
+    display: 'block',
+    width: 0,
+    height: 0,
+    minWidth: '100%',
+    maxWidth: '100%',
+    minHeight: '100%',
+    maxHeight: '100%',
+    objectFit,
+    objectPosition
+  };
+
+  if (typeof widthInt !== 'undefined' && typeof heightInt !== 'undefined' && layout !== 'fill') {
+    // <Image src="i.png" width="100" height="100" />
+    const quotient = heightInt / widthInt;
+    const paddingTop = isNaN(quotient) ? '100%' : `${quotient * 100}%`;
+
+    if (layout === 'responsive') {
+      // <Image src="i.png" width="100" height="100" layout="responsive" />
+      wrapperStyle = {
+        display: 'block',
+        overflow: 'hidden',
+        position: 'relative',
+        boxSizing: 'border-box',
+        margin: 0
+      };
+      sizerStyle = {
+        display: 'block',
+        boxSizing: 'border-box',
+        paddingTop
+      };
+    } else if (layout === 'intrinsic') {
+      // <Image src="i.png" width="100" height="100" layout="intrinsic" />
+      wrapperStyle = {
+        display: 'inline-block',
+        maxWidth: '100%',
+        overflow: 'hidden',
+        position: 'relative',
+        boxSizing: 'border-box',
+        margin: 0
+      };
+      sizerStyle = {
+        boxSizing: 'border-box',
+        display: 'block',
+        maxWidth: '100%'
+      };
+      sizerSvg = `<svg width="${widthInt}" height="${heightInt}" xmlns="http://www.w3.org/2000/svg" version="1.1"/>`;
+    } else if (layout === 'fixed') {
+      // <Image src="i.png" width="100" height="100" layout="fixed" />
+      wrapperStyle = {
+        overflow: 'hidden',
+        boxSizing: 'border-box',
+        display: 'inline-block',
+        position: 'relative',
+        width: widthInt,
+        height: heightInt
+      };
+    }
+  } else if (typeof widthInt === 'undefined' && typeof heightInt === 'undefined' && layout === 'fill') {
+    // <Image src="i.png" layout="fill" />
+    wrapperStyle = {
+      display: 'block',
+      overflow: 'hidden',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      boxSizing: 'border-box',
+      margin: 0
+    };
+  } else {
+    // <Image src="i.png" />
+    if (false) {}
+  }
+
+  let imgAttributes = {
+    src: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    srcSet: undefined,
+    sizes: undefined
+  };
+
+  if (isVisible) {
+    imgAttributes = generateImgAttrs({
+      src,
+      unoptimized,
+      layout,
+      width: widthInt,
+      quality: qualityInt,
+      sizes,
+      loader
+    });
+  }
+
+  if (unsized) {
+    wrapperStyle = undefined;
+    sizerStyle = undefined;
+    imgStyle = undefined;
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: wrapperStyle
+  }, sizerStyle ? /*#__PURE__*/_react.default.createElement("div", {
+    style: sizerStyle
+  }, sizerSvg ? /*#__PURE__*/_react.default.createElement("img", {
+    style: {
+      maxWidth: '100%',
+      display: 'block',
+      margin: 0,
+      border: 'none',
+      padding: 0
+    },
+    alt: "",
+    "aria-hidden": true,
+    role: "presentation",
+    src: `data:image/svg+xml;base64,${(0, _toBase.toBase64)(sizerSvg)}`
+  }) : null) : null, /*#__PURE__*/_react.default.createElement("img", Object.assign({}, rest, imgAttributes, {
+    decoding: "async",
+    className: className,
+    ref: setRef,
+    style: imgStyle
+  })), priority ?
+  /*#__PURE__*/
+  // Note how we omit the `href` attribute, as it would only be relevant
+  // for browsers that do not support `imagesrcset`, and in those cases
+  // it would likely cause the incorrect image to be preloaded.
+  //
+  // https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
+  _react.default.createElement(_head.default, null, /*#__PURE__*/_react.default.createElement("link", {
+    key: '__nimg-' + imgAttributes.src + imgAttributes.srcSet + imgAttributes.sizes,
+    rel: "preload",
+    as: "image",
+    href: imgAttributes.srcSet ? undefined : imgAttributes.src // @ts-ignore: imagesrcset is not yet in the link element type
+    ,
+    imagesrcset: imgAttributes.srcSet // @ts-ignore: imagesizes is not yet in the link element type
+    ,
+    imagesizes: imgAttributes.sizes
+  })) : null);
+} //BUILT IN LOADERS
+
+
+function normalizeSrc(src) {
+  return src[0] === '/' ? src.slice(1) : src;
+}
+
+function imgixLoader({
+  root,
+  src,
+  width,
+  quality
+}) {
+  // Demo: https://static.imgix.net/daisy.png?format=auto&fit=max&w=300
+  const params = ['auto=format', 'fit=max', 'w=' + width];
+  let paramsString = '';
+
+  if (quality) {
+    params.push('q=' + quality);
+  }
+
+  if (params.length) {
+    paramsString = '?' + params.join('&');
+  }
+
+  return `${root}${normalizeSrc(src)}${paramsString}`;
+}
+
+function akamaiLoader({
+  root,
+  src,
+  width
+}) {
+  return `${root}${normalizeSrc(src)}?imwidth=${width}`;
+}
+
+function cloudinaryLoader({
+  root,
+  src,
+  width,
+  quality
+}) {
+  // Demo: https://res.cloudinary.com/demo/image/upload/w_300,c_limit,q_auto/turtles.jpg
+  const params = ['f_auto', 'c_limit', 'w_' + width, 'q_' + (quality || 'auto')];
+  let paramsString = params.join(',') + '/';
+  return `${root}${paramsString}${normalizeSrc(src)}`;
+}
+
+function defaultLoader({
+  root,
+  src,
+  width,
+  quality
+}) {
+  if (false) {}
+
+  return `${root}?url=${encodeURIComponent(src)}&w=${width}&q=${quality || 75}`;
+}
+
+/***/ }),
+
 /***/ "dZ6Y":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1307,18 +1914,6 @@ function mitt() {
 
   };
 }
-
-/***/ }),
-
-/***/ "dbdp":
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"header": "main-navigation_header__1muvD",
-	"active": "main-navigation_active__3BRtK"
-};
-
 
 /***/ }),
 
@@ -2604,6 +3199,24 @@ function parseRelativeUrl(url, base) {
 
 /***/ }),
 
+/***/ "i4SY":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"latest": "featured-posts_latest__2Tq4V"
+};
+
+
+/***/ }),
+
+/***/ "mw/K":
+/***/ (function(module, exports) {
+
+module.exports = require("fs");
+
+/***/ }),
+
 /***/ "nOHt":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2756,6 +3369,45 @@ function makePublicRouterInstance(router) {
 
 /***/ }),
 
+/***/ "oyvS":
+/***/ (function(module, exports) {
+
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "pVnL":
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
+/***/ "uo/4":
+/***/ (function(module, exports) {
+
+module.exports = require("gray-matter");
+
+/***/ }),
+
 /***/ "vNVm":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2861,17 +3513,22 @@ exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denorm
 
 /***/ }),
 
+/***/ "x+QA":
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"hero": "hero_hero__1246b",
+	"image": "hero_image__APzai"
+};
+
+
+/***/ }),
+
 /***/ "xnum":
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "zPlV":
-/***/ (function(module, exports) {
-
-
 
 /***/ })
 

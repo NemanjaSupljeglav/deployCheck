@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/ 	var installedModules = require('../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,23 +88,89 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "KqAr");
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "KqAr":
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("oLF9");
+
+
+/***/ }),
+
+/***/ "oLF9":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ykE2");
+/* harmony import */ var mongodb__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mongodb__WEBPACK_IMPORTED_MODULE_0__);
 
-    
 
-    /* harmony default export */ __webpack_exports__["default"] = (function (ctx) {
-      return Promise.all([])
+async function handler(req, res) {
+  if (req.method === "POST") {
+    const {
+      email,
+      name,
+      message
+    } = req.body;
+
+    if (!email || !email.includes("@") || !name || name.trim() === "" || !message || message.trim() === "") {
+      res.status(422).json({
+        message: "Invalid input."
+      });
+      return;
+    }
+
+    const newMessage = {
+      email,
+      name,
+      message
+    };
+    let client;
+    const connectionString = `mongodb+srv://${"nemanja"}:${"nemanja123"}@${"cluster0"}.ql4wlyf.mongodb.net/${"my-site"}?retryWrites=true&w=majority`;
+
+    try {
+      client = await mongodb__WEBPACK_IMPORTED_MODULE_0__["MongoClient"].connect(connectionString);
+    } catch (error) {
+      res.status(500).json({
+        message: "Could not connect to database."
+      });
+      return;
+    }
+
+    const db = client.db();
+
+    try {
+      const result = await db.collection("messages").insertOne(newMessage);
+      newMessage.id = result.insertedId;
+    } catch (error) {
+      client.close();
+      res.status(500).json({
+        message: "Storing message failed!"
+      });
+      return;
+    }
+
+    client.close();
+    res.status(201).json({
+      message: "Successfully stored message!",
+      message: newMessage
     });
-  
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (handler);
+
+/***/ }),
+
+/***/ "ykE2":
+/***/ (function(module, exports) {
+
+module.exports = require("mongodb");
 
 /***/ })
 
