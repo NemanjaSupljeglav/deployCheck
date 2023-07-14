@@ -12,7 +12,7 @@
     "gray-matter": "^4.0.2",
     "mongodb": "^3.6.4",
     "next": "10.0.6",
-    "postcss": "7.0.39",
+    "postcss": "^8.4.26",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-markdown": "^5.0.3",
