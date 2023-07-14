@@ -8,16 +8,15 @@ import { getFeaturedPosts } from "../lib/posts-util";
 function HomePage(props) {
   return (
     <Fragment>
-      {/*       <Head>
+      <Head>
         <title>Max' Blog</title>
         <meta
-          name='description'
-          content='I post about programming and web development.'
+          name="description"
+          content="I post about programming and web development."
         />
       </Head>
       <Hero />
-      <FeaturedPosts posts={props.posts} /> */}
-      Nemanja deploy check
+      <FeaturedPosts posts={props.posts} />
     </Fragment>
   );
 }
