@@ -1,14 +1,14 @@
-import { Fragment } from 'react';
-import Head from 'next/head';
+import { Fragment } from "react";
+import Head from "next/head";
 
-import FeaturedPosts from '../components/home-page/featured-posts';
-import Hero from '../components/home-page/hero';
-import { getFeaturedPosts } from '../lib/posts-util';
+import FeaturedPosts from "../components/home-page/featured-posts";
+import Hero from "../components/home-page/hero";
+import { getFeaturedPosts } from "../lib/posts-util";
 
 function HomePage(props) {
   return (
     <Fragment>
-      <Head>
+      {/*       <Head>
         <title>Max' Blog</title>
         <meta
           name='description'
@@ -16,7 +16,8 @@ function HomePage(props) {
         />
       </Head>
       <Hero />
-      <FeaturedPosts posts={props.posts} />
+      <FeaturedPosts posts={props.posts} /> */}
+      Nemanja deploy check
     </Fragment>
   );
 }
@@ -26,8 +27,8 @@ export function getStaticProps() {
 
   return {
     props: {
-      posts: featuredPosts,
-    },
+      posts: featuredPosts
+    }
   };
 }
 
