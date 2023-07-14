@@ -987,6 +987,7 @@ var external_react_ = __webpack_require__("cDcd");
 
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 
 // EXTERNAL MODULE: ./components/posts/posts-grid.js + 1 modules
 var posts_grid = __webpack_require__("JHKd");
@@ -1058,9 +1059,19 @@ var posts_util = __webpack_require__("6DrD");
 
 
 
+
 function HomePage(props) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_react_["Fragment"], {
-    children: "Nemanja deploy check"
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(external_react_["Fragment"], {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: "Max' Blog"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "description",
+        content: "I post about programming and web development."
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(hero, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(featured_posts, {
+      posts: props.posts
+    })]
   });
 }
 
